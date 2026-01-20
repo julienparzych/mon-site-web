@@ -2585,76 +2585,41 @@ a {
 .cid-uYscMWgVtD .mbr-text UL {
   text-align: left;
 }
-.cid-uYpH29jDki {
-  padding-top: 2rem;
-  padding-bottom: 6rem;
+.cid-v8SHLvOfTe {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   background-color: #edefeb;
 }
-.cid-uYpH29jDki img,
-.cid-uYpH29jDki .item-img {
+.cid-v8SHLvOfTe .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-v8SHLvOfTe .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
   width: 100%;
   height: 100%;
-  height: 300px;
-  object-fit: cover;
+  position: absolute;
+  top: 0;
 }
-.cid-uYpH29jDki .item:focus,
-.cid-uYpH29jDki span:focus {
-  outline: none;
+.cid-v8SHLvOfTe .mbr-text {
+  color: #000000;
 }
-.cid-uYpH29jDki .item {
+.cid-v8SHLvOfTe .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-v8SHLvOfTe .main-button {
   margin-bottom: 2rem;
 }
 @media (max-width: 767px) {
-  .cid-uYpH29jDki .item {
-    margin-bottom: 1rem;
+  .cid-v8SHLvOfTe .main-button {
+    margin-bottom: 2rem;
   }
 }
-.cid-uYpH29jDki .item-content {
-  margin-top: 2rem;
-  padding: 0 2.25rem 2.25rem;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .cid-uYpH29jDki .item-content {
-    padding: 2rem 1.5rem;
-    padding-top: 1rem;
-    margin-top: 1rem;
-  }
-}
-@media (max-width: 767px) {
-  .cid-uYpH29jDki .item-content {
-    padding: 2rem 1.5rem;
-    padding-top: 1rem;
-    margin-top: 1rem;
-  }
-}
-.cid-uYpH29jDki .item-wrapper {
-  position: relative;
-  background: #ffffff;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.cid-uYpH29jDki .item-wrapper .item-footer {
-  margin-top: auto;
-}
-.cid-uYpH29jDki .mbr-section-title {
+.cid-v8SHLvOfTe .mbr-section-subtitle,
+.cid-v8SHLvOfTe .main-button {
   color: #000000;
-}
-.cid-uYpH29jDki .item-title {
-  text-align: center;
-}
-.cid-uYpH29jDki .item-subtitle {
-  text-align: left;
-}
-.cid-uYpH29jDki .mbr-text,
-.cid-uYpH29jDki .item .mbr-section-btn {
-  text-align: center;
-}
-.cid-uYpH29jDki .content-head {
-  max-width: 800px;
 }
 .cid-uYpx6zydzW {
   padding-top: 0rem;
