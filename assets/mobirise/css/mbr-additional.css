@@ -1628,6 +1628,21 @@ a {
     font-size: 10px !important;
     line-height: 1 !important;
   }
+  .cid-dzPbsP1PxN .mobile-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    color: #9fe870;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    animation: pulseHint 2s infinite;
+  }
+  .cid-dzPbsP1PxN .mobile-hint .mbr-iconfont {
+    font-size: 1.2rem;
+  }
 }
 .cid-dzPbsP1PxN .mbr-section-title {
   color: #9fe870;
@@ -1637,6 +1652,46 @@ a {
 }
 .cid-dzPbsP1PxN P {
   color: #ffffff;
+}
+.cid-dzPbsP1PxN .mobile-hint {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .cid-dzPbsP1PxN .mobile-hint {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    color: #9fe870 !important;
+    animation: pulseHint 2s infinite;
+    z-index: 99;
+  }
+  .cid-dzPbsP1PxN .hint-text {
+    margin: 0 0 0 10px !important;
+    padding: 0 !important;
+    font-size: 1rem !important;
+    color: #9fe870 !important;
+    font-family: 'Exo 2', sans-serif;
+  }
+  .cid-dzPbsP1PxN .mobile-hint .mbr-iconfont {
+    font-size: 1.5rem !important;
+    color: #9fe870 !important;
+  }
+}
+@keyframes pulseHint {
+  0% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
 }
 .cid-vekfQEJY2X {
   padding-top: 30px;
@@ -1784,7 +1839,7 @@ a {
 }
 .cid-60rw6RD1Hm .mbr-text,
 .cid-60rw6RD1Hm .mbr-section-btn {
-  color: #716c80;
+  color: #ffffff;
 }
 @keyframes zoomEtApparition {
   0% {
@@ -2667,49 +2722,57 @@ a {
     flex: 0 0 33.33% !important;
     max-width: 33.33% !important;
     padding: 4px !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
-  .cid-VOhLCbstl9 .mbr-section-title {
-    font-size: 0.9rem !important;
+  .cid-VOhLCbstl9 .content {
+    background-color: #757b62;
+    padding: 6px !important;
+    flex: 1 1 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100%;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+  }
+  .cid-VOhLCbstl9 .mbr-section-subtitle {
+    font-size: 0.75rem !important;
     line-height: 1.1 !important;
+    margin-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin-bottom: 8px !important;
   }
-  .cid-VOhLCbstl9 .content,
-  .cid-VOhLCbstl9 .mbr-section-subtitle,
-  .cid-VOhLCbstl9 .card-text {
+  .cid-VOhLCbstl9 .content p {
     font-size: 0.7rem !important;
-    padding: 2px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 4px !important;
   }
-  .cid-VOhLCbstl9 img {
-    border-radius: 3px !important;
+  .cid-VOhLCbstl9 .content p:last-of-type {
+    margin-top: auto !important;
+    padding-top: 8px !important;
+    margin-bottom: 5px !important;
+    font-weight: normal;
   }
-  .cid-VOhLCbstl9 .mbr-section-btn,
-  .cid-VOhLCbstl9 .btn-container {
-    padding: 4px 8px !important;
-    font-size: 0.7rem !important;
-    min-width: auto !important;
+  .cid-VOhLCbstl9 .column .mbr-section-btn {
+    margin-top: 0 !important;
+    margin-bottom: 2px !important;
+    padding: 0 !important;
   }
   .cid-VOhLCbstl9 .btn {
     padding: 4px 8px !important;
     font-size: 0.7rem !important;
     min-width: auto !important;
   }
-  .cid-VOhLCbstl9 .btn .mbr-iconfont {
-    font-size: 0.8rem !important;
-    margin-right: 2px !important;
-  }
-  .cid-VOhLCbstl9 .column .btn,
-  .cid-VOhLCbstl9 .content .btn {
+  .cid-VOhLCbstl9 .column .btn {
     padding: 4px 8px !important;
-    font-size: 0.65rem !important;
-    min-width: auto !important;
-    border-radius: 2px !important;
+    font-size: 0.5rem !important;
+    border-radius: 4px !important;
     display: inline-block !important;
     width: auto !important;
-    max-width: 100% !important;
   }
-  .cid-VOhLCbstl9 .column .mbr-section-btn {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
-    padding: 0 !important;
+  .cid-VOhLCbstl9 img {
+    border-radius: 3px !important;
+    width: 100%;
   }
 }
 .cid-uYpwGWzzak {
