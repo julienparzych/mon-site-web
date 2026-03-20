@@ -1820,14 +1820,25 @@ a {
 }
 @media (max-width: 576px) {
   .cid-60rw6RD1Hm .img1 {
-    width: 80%;
+    width: 70% !important;
+    box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35) !important;
+    margin-left: 0;
   }
   .cid-60rw6RD1Hm .img2 {
-    width: 80%;
+    width: 60% !important;
+    top: 2rem !important;
+    right: 0rem !important;
+    box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35) !important;
   }
   .cid-60rw6RD1Hm .mbr-text,
   .cid-60rw6RD1Hm .mbr-section-btn {
-    font-size: 80%;
+    font-size: 85%;
+  }
+  .cid-60rw6RD1Hm .relative {
+    overflow: visible !important;
+    position: relative;
+    width: 100%;
+    margin-right: 0;
   }
 }
 .cid-VWLmUARUNy {
