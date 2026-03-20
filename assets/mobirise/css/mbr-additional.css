@@ -1427,6 +1427,8 @@ a {
   padding: 40px;
   margin-left: -130px;
   border-radius: 15px;
+  position: relative;
+  z-index: 5;
   box-shadow: -2px 20px 19px -7px #232323;
 }
 .cid-vdF9tq0PcW .mu-about-right p {

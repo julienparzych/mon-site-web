@@ -959,6 +959,8 @@
               "padding": "40px",
               "margin-left": "-130px",
               "border-radius": "15px",
+              "position": "relative",
+              "z-index": "5",
               "box-shadow": "(@LeRi * 1px) (@UpDo * 1px) (@Flou * 1px) (@FlouInt * 1px) @ShadowColor"
             },
             ".mu-about-right p": {
