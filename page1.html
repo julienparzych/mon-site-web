@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=ORxgzr"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=ORxgzr" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=tlkmRt"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=tlkmRt" type="text/css">
 
   
   
@@ -379,6 +379,27 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+
+  // Sélectionne toutes les images dans les colonnes de la boutique
+const images = document.querySelectorAll('.content img');
+
+images.forEach(img => {
+    img.addEventListener('click', function() {
+        // Si l'image est déjà zoomée, on l'enlève
+        if (this.classList.contains('img-zoom-active')) {
+            this.classList.remove('img-zoom-active');
+        } else {
+            // On enlève le zoom sur toutes les autres images avant d'agrandir celle-ci
+            images.forEach(otherImg => otherImg.classList.remove('img-zoom-active'));
+            this.classList.add('img-zoom-active');
+        }
+    });
+});
+
+// Referme le zoom si on clique n'importe où ailleurs (optionnel)
+document.addEventListener('scroll', () => {
+    images.forEach(img => img.classList.remove('img-zoom-active'));
+});
 }</script>   
             </div>
         </div>
@@ -396,7 +417,7 @@ for (var i = 0; i < btns.length; i++) {
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="bRiD87awBPAcrtzz07SCQ7rS3gHk7rgYs7dA1qF/G68Gnbu9BQtq4IQ2PjFQbmYru7HctyX3pv12XaOstr8eSK5adhmkkMoCpN+7y4UjIW86Vz9ZDX6WT26xfbxMElgn">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="1Q9KuuMcJPVVxsRsWl4HAmxoXnfBHSKp3dr0PYv240Uh2VHDwyRYVJ0KMM9sLgpuh0Dkda4veYoC50N6E7n2VrB1uOOm9dCIQeqS5oSkA7kBfWfc+PSL51HPCgbbFVeX">
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Merci, je vous répond au plus vite, Julien</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -438,7 +459,7 @@ for (var i = 0; i < btns.length; i++) {
             </div>
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-creator.html">Free AI Website Creator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-builder.html">AI Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  
   
   
   <input name="animation" type="hidden">

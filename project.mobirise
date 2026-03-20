@@ -2698,9 +2698,37 @@
                 "display": "inline-block !important",
                 "width": "auto !important"
               },
-              "img": {
+              ".content img": {
+                "border-radius": "4px !important",
+                "width": "100%",
+                "margin-bottom": "5px !important",
+                "transition": "all 0.4s ease-in-out",
+                "cursor": "zoom-in",
+                "z-index": "1",
+                "position": "relative"
+              },
+              ".img-zoom-active": {
+                "position": "fixed !important",
+                "top": "50% !important",
+                "left": "50% !important",
+                "transform": "translate(-50%, -50%) scale(1.5) !important",
+                "width": "90vw !important",
+                "max-height": "80vh !important",
+                "object-fit": "contain !important",
+                "z-index": "9999 !important",
+                "box-shadow": "0 0 100px rgba(0, 0, 0, 0.8)",
                 "border-radius": "3px !important",
-                "width": "100%"
+                "cursor": "zoom-out !important"
+              },
+              ".zoom-overlay": {
+                "position": "fixed",
+                "top": "0",
+                "left": "0",
+                "width": "100%",
+                "height": "100%",
+                "background": "rgba(0, 0, 0, 0.7)",
+                "z-index": "9998",
+                "display": "none"
               }
             }
           },
@@ -2711,7 +2739,7 @@
           "_sourceTheme": "startm5",
           "_PHPplaceholders": [],
           "_JSplaceholders": [
-            "<script>\n                filterSelection(\"all\") // Execute the function and show all columns\nfunction filterSelection(c) {\n  var x, i;\n  x = document.getElementsByClassName(\"column\");\n  if (c == \"all\") c = \"\";\n  // Add the \"show\" class (display:block) to the filtered elements, and remove the \"show\" class from the elements that are not selected\n  for (i = 0; i < x.length; i++) {\n    w3RemoveClass(x[i], \"show\");\n    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], \"show\");\n  }\n}\n\n// Show filtered elements\nfunction w3AddClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    if (arr1.indexOf(arr2[i]) == -1) {\n      element.className += \" \" + arr2[i];\n    }\n  }\n}\n\n// Hide elements that are not selected\nfunction w3RemoveClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    while (arr1.indexOf(arr2[i]) > -1) {\n      arr1.splice(arr1.indexOf(arr2[i]), 1);\n    }\n  }\n  element.className = arr1.join(\" \");\n}\n\n// Add active class to the current button (highlight it)\nvar btnContainer = document.getElementById(\"myBtnContainer\");\nvar btns = btnContainer.getElementsByClassName(\"btn\");\nfor (var i = 0; i < btns.length; i++) {\n  btns[i].addEventListener(\"click\", function(){\n    var current = document.getElementsByClassName(\"active\");\n    current[0].className = current[0].className.replace(\" active\", \"\");\n    this.className += \" active\";\n  });\n}</script>"
+            "<script>\n                filterSelection(\"all\") // Execute the function and show all columns\nfunction filterSelection(c) {\n  var x, i;\n  x = document.getElementsByClassName(\"column\");\n  if (c == \"all\") c = \"\";\n  // Add the \"show\" class (display:block) to the filtered elements, and remove the \"show\" class from the elements that are not selected\n  for (i = 0; i < x.length; i++) {\n    w3RemoveClass(x[i], \"show\");\n    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], \"show\");\n  }\n}\n\n// Show filtered elements\nfunction w3AddClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    if (arr1.indexOf(arr2[i]) == -1) {\n      element.className += \" \" + arr2[i];\n    }\n  }\n}\n\n// Hide elements that are not selected\nfunction w3RemoveClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    while (arr1.indexOf(arr2[i]) > -1) {\n      arr1.splice(arr1.indexOf(arr2[i]), 1);\n    }\n  }\n  element.className = arr1.join(\" \");\n}\n\n// Add active class to the current button (highlight it)\nvar btnContainer = document.getElementById(\"myBtnContainer\");\nvar btns = btnContainer.getElementsByClassName(\"btn\");\nfor (var i = 0; i < btns.length; i++) {\n  btns[i].addEventListener(\"click\", function(){\n    var current = document.getElementsByClassName(\"active\");\n    current[0].className = current[0].className.replace(\" active\", \"\");\n    this.className += \" active\";\n  });\n\n  // Sélectionne toutes les images dans les colonnes de la boutique\nconst images = document.querySelectorAll('.content img');\n\nimages.forEach(img => {\n    img.addEventListener('click', function() {\n        // Si l'image est déjà zoomée, on l'enlève\n        if (this.classList.contains('img-zoom-active')) {\n            this.classList.remove('img-zoom-active');\n        } else {\n            // On enlève le zoom sur toutes les autres images avant d'agrandir celle-ci\n            images.forEach(otherImg => otherImg.classList.remove('img-zoom-active'));\n            this.classList.add('img-zoom-active');\n        }\n    });\n});\n\n// Referme le zoom si on clique n'importe où ailleurs (optionnel)\ndocument.addEventListener('scroll', () => {\n    images.forEach(img => img.classList.remove('img-zoom-active'));\n});\n}</script>"
           ],
           "_protectedParams": [],
           "_global": false,
