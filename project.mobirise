@@ -50,7 +50,7 @@
         "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 88,
+    "uniqCompNum": 94,
     "versionPublish": "6.1.12",
     "imageResize": false,
     "chatbutton": {},
@@ -2579,7 +2579,7 @@
                 "background-image": "url(@fallBackImage)"
               }
             },
-            "*": {
+            "-": {
               "box-sizing": "border-box"
             },
             ".row": {
@@ -2736,13 +2736,13 @@
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content4\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"9\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/lionaf.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#664306\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n      </fieldset>\n\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#232323\" condition=\"bg.type == 'color'\">\n         <input type=\"range\" name=\"angle\" title=\"Angle\" min=\"0\" max=\"270\" value=\"0\" step=\"1\" condition=\"bg.type == 'color'\">\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"bg.type == 'color'\">\n\t\t\n\t\t\n\t\t        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n\n            <header>Gallery</header>\n                  <input type=\"color\" title=\"Color\" name=\"ContentColor\" value=\"#757b62\">\n                 <input type=\"color\" title=\"Button Color\" name=\"ButtonColor\" value=\"#ffffff\">  \n          <input type=\"color\" title=\"Button Color Over\" name=\"ButtonColorOver\" value=\"#ffffff\"> \n                    <input type=\"color\" title=\"Button Color Active\" name=\"ButtonColorActive\" value=\"#666666\"> \n                            <input type=\"checkbox\" title=\"Button\" name=\"ButtonShop\" checked>  \n                                  \n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Produits</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Pour des raisons écologique et pour pouvoir vous proposer une personnalisation et rendre unique chaque objets, il n'y a pas de stock, tout est fabriqué sur demande.</h4>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_cart&amount=5.00&item_name=Candle%201&currency_code=USD\" data-app-placeholder=\"Type Text\">LEARN MORE</a>\n                    <a class=\"btn btn-primary-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n    <div id=\"myBtnContainer\">\n  <button class=\"btn active\" onclick=\"filterSelection('all')\"> Tout voir</button>\n  <button class=\"btn\" onclick=\"filterSelection('nature')\"> En ce moment</button>\n  <button class=\"btn\" onclick=\"filterSelection('cars')\"> Kit créatif</button>\n  <button class=\"btn\" onclick=\"filterSelection('people')\"> Décoration utile (ou pas)</button>\n  <button class=\"btn\" onclick=\"filterSelection('bois')\"> Médaille, Trophée</button>\n</div>\n\n<!-- Portfolio Gallery Grid -->\n<div class=\"row\">\n  <div class=\"column nature\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/affiche-jeu-grenouille.webp\" alt=\"Mountains\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Kit Créatif du moment</h4>\n      <p>Passez un bon moment avec votre enfants, personnalisez avec vos propre couleurs et grace à un montage facile développez sa dextérité&nbsp;</p>\n       <p>Tarif:<b> 15 euros</b></p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n         </div>\n  </div>\n  <div class=\"column nature\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1773917864348.webp\" alt=\"Lights\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Œuf en bois</h4>\n      <p>Réalisé en bois (chêne), choisissez votre message à graver,<br>un cadeaux unique pour faire plaisir</p>\n        <p>Tarif: <b>15 euros</b></p>\n         <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n\n\n    </div>\n  </div>\n  <div class=\"column nature\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/cinma-leve-de-fonds-affiche-1.webp\" alt=\"Nature\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Création à la demande</h4>\n      <p>Vous ne trouvez pas ce que vous cherchez dans le catalogue ?<br>Faites moi part de vos envies les plus originales. Je donne vie à vos idées, de la conception à la réalisation finale, pour une pièce unique qui vous ressemble.</p>\n        <p>Tarif: <b>à la demande</b></p>\n              <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n\n  <div class=\"column cars\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/arbre-aux-gnogme-1131x1550.webp\" alt=\"Car\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Arbre aux Gnomes</h4>\n      <p><b>Kit créatif à monter et personnaliser sois même.</b><br>Jeu d'équilibre, où chacun à son tour dépose un gnome au dessus de l'arbre, attention à la chute</p>\n     <p>Tarif: <b>15 euros</b></p>\n                 <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column cars\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/kit-cra-janvier-794x1123.webp\" alt=\"Car\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">L'avion</h4>\n      <p><b>Kit créatif à monter et personnaliser sois même.</b><br>Votre enfants construit et personnalise son propre jouet</p>\n     <p>Tarif: <b>15 euros</b></p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column cars\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/casse-tete-retro-896x1184.webp\" alt=\"Car\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Casse tête rétro</h4>\n      <p><b>Kit créatif à monter et personnaliser sois même.</b><br>Lance le dé, prend la pièce correspondante et essaye d'empiller un maximum de pièces</p>\n     <p>Tarif: <b>15 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n      </div>\n  </div>\n\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1759697984848-6-768x1344.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">lanceur de dés</h4>\n      <p>Lanceur de dés pour éviter qu'ils ne tombent n'impote où, repliable pour un rangement ou un transport facile</p>\n  <p>Tarif: <b>15 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-b3rzj7b3rzj7b3rz-2-896x1190.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Livre d'or</h4>\n      <p>Une façon originale de garder un souvenir d'un évènement, chaque invité peut écrire sur une feuille en bois et l'insérer dans le cadre.</p>\n     <p>Tarif: <b>70 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1759698331561.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Support bord de lit</h4>\n      <p>Support de smartphone avec passage pour le chargeur, repose lunettes et vide poches .</p>\n   <p>Tarif: <b>20 euros</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/image1.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">coffre a jouer sur roue</h4>\n      <p>Votre enfant va adorer, il peut transporter avec lui ses jouets, monter dedans et parfait pour le faire ranger, il vous suit partout</p>\n  <p>Tarif: <b>80 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1761049014457.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Cadre pour bracelet de naissance</h4>\n      <p>si vous voulez faire un cadeau original et personnalisé ou que vous avez gardé le bracelet de naissance dans une boîte, mettez le en valeur avec ce cadre.</p>\n     <p>Tarif: <b>10 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-9la2p19la2p19la2-2-896x1190.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Bouquet de fleurs et vase en bois</h4>\n      <p>Les enfants décorent les fleurs à leurs convenance, pour faire un cadeaux unique</p>\n   <p>Tarif: à partir de <b>20 euros</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-gc3v3lgc3v3lgc3v.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Décoration de parebrise&nbsp;</h4>\n      <p>Embellissez l'intérieur de votre véhicule avec ce pendentif en forme d'arbre de vie</p>\n  <p>Tarif: <b>10 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1768517836732.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Cadre photo avec prénom</h4>\n      <p>Idéal pour affiché vos souvenirs partagés</p>\n     <p>Tarif: <b>40 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/cinma-leve-de-fonds-affiche-3.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Création à la demande</h4>\n      <p>Vous ne trouvez pas ce que vous cherchez dans le catalogue ?\n<br>Faites moi part de vos envies les plus originales. Je donne vie à vos idées, de la conception à la réalisation finale, pour une pièce unique qui vous ressemble.</p>\n   <p>Tarif: <b>à la demande</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-hq28b5hq28b5hq28.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Ambigramme</h4>\n      <p>Chaque angle un mot ou prénom différent</p>\n  <p>Tarif: <b>40 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-m115lom115lom115.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Décrocher la Lune</h4>\n      <p>Lampe lune avec son support en forme de main</p>\n     <p>Tarif: <b>50 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column people\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-2oi0022oi0022oi0.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Création à la demande</h4>\n      <p>Besoin de réparer un appareil, car une pieces a casser je conçois, reproduit et imprime la piece.</p>\n   <p>Tarif: <b>à la demande</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n\n    <div class=\"column bois\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-e47c12e47c12e47c.webp\" alt=\"bois\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Médaille</h4>\n      <p>gravure personnalisée, dimension et forme au choix.</p>\n  <p>Tarif: à partir de<b> 3 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column bois\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-pdc9fapdc9fapdc9.webp\" alt=\"bois\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Trophée</h4>\n      <p>Sur une base à deux plaquette pour graver vos messages, le haut du modèle est entièrement personnalisable.</p>\n     <p>Tarif: à partir de <b>15 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column bois\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/mapa-mental-brainstorming-lluvia-de-ideas-doodle-colorido-rosa-1.webp\" alt=\"bois\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Nouveau</h4>\n      <p>Même si de nouveaux modèles sont à venir, je peux à la demande concevoir des modèles unique.</p>\n   <p>Tarif: <b>sur demande</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n\n<!-- END GRID -->\n</div>\n\n      [JS_CODE_0]   \n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content4\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"9\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/lionaf.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#664306\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n      </fieldset>\n\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#232323\" condition=\"bg.type == 'color'\">\n         <input type=\"range\" name=\"angle\" title=\"Angle\" min=\"0\" max=\"270\" value=\"0\" step=\"1\" condition=\"bg.type == 'color'\">\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"bg.type == 'color'\">\n\t\t\n\t\t\n\t\t        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n\n            <header>Gallery</header>\n                  <input type=\"color\" title=\"Color\" name=\"ContentColor\" value=\"#757b62\">\n                 <input type=\"color\" title=\"Button Color\" name=\"ButtonColor\" value=\"#ffffff\">  \n          <input type=\"color\" title=\"Button Color Over\" name=\"ButtonColorOver\" value=\"#ffffff\"> \n                    <input type=\"color\" title=\"Button Color Active\" name=\"ButtonColorActive\" value=\"#666666\"> \n                            <input type=\"checkbox\" title=\"Button\" name=\"ButtonShop\" checked>  \n                                  \n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Produits</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Pour des raisons écologique et pour pouvoir vous proposer une personnalisation et rendre unique chaque objets, il n'y a pas de stock, tout est fabriqué sur demande.</h4>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_cart&amount=5.00&item_name=Candle%201&currency_code=USD\" data-app-placeholder=\"Type Text\">LEARN MORE</a>\n                    <a class=\"btn btn-primary-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n    <div id=\"myBtnContainer\">\n  <button class=\"btn active\" onclick=\"filterSelection('all')\"> Tout voir</button>\n  <button class=\"btn\" onclick=\"filterSelection('nature')\"> En ce moment</button>\n  <button class=\"btn\" onclick=\"filterSelection('cars')\"> Kit créatif</button>\n  <button class=\"btn\" onclick=\"filterSelection('people')\"> Décoration utile (ou pas)</button>\n  <button class=\"btn\" onclick=\"filterSelection('bois')\"> Médaille, Trophée</button>\n</div>\n\n<!-- Portfolio Gallery Grid -->\n<div class=\"row\">\n  <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/affiche-jeu-grenouille.webp\" alt=\"Mountains\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Kit Créatif du moment</h4>\n      <p>Passez un bon moment avec votre enfants, personnalisez avec vos propre couleurs et grace à un montage facile développez sa dextérité&nbsp;</p>\n       <p>Tarif:<b> 15 euros</b></p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n         </div>\n  </div>\n  <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-1bl75h1bl75h1bl7.webp\" alt=\"Lights\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Décorations de noël</h4>\n      <p>Cette année, offrez à votre sapin une touche d'authenticité et de poésie avec les toutes nouvelles décorations de Noël en bois</p>\n        <p>Tarif: <b>à partir 5&nbsp;euros</b></p>\n         <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page3.html\" data-app-placeholder=\"Type Text\">Voir</a></div>\n\n\n    </div>\n  </div>\n  <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/cinma-leve-de-fonds-affiche-1.webp\" alt=\"Nature\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Création à la demande</h4>\n      <p>Vous ne trouvez pas ce que vous cherchez dans le catalogue ?<br>Faites moi part de vos envies les plus originales. Je donne vie à vos idées, de la conception à la réalisation finale, pour une pièce unique qui vous ressemble.</p>\n        <p>Tarif: <b>à la demande</b></p>\n              <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n\n  <div class=\"column cars show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/arbre-aux-gnogme-1131x1550.webp\" alt=\"Car\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Arbre aux Gnomes</h4>\n      <p><b>Kit créatif à monter et personnaliser sois même.</b><br>Jeu d'équilibre, où chacun à son tour dépose un gnome au dessus de l'arbre, attention à la chute</p>\n     <p>Tarif: <b>15 euros</b></p>\n                 <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column cars show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/kit-cra-janvier-794x1123.webp\" alt=\"Car\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">L'avion</h4>\n      <p><b>Kit créatif à monter et personnaliser sois même.</b><br>Votre enfants construit et personnalise son propre jouet</p>\n     <p>Tarif: <b>15 euros</b></p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column cars show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/casse-tete-retro-896x1184.webp\" alt=\"Car\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Casse tête rétro</h4>\n      <p><b>Kit créatif à monter et personnaliser sois même.</b><br>Lance le dé, prend la pièce correspondante et essaye d'empiller un maximum de pièces</p>\n     <p>Tarif: <b>15 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n      </div>\n  </div>\n\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1759697984848-6-768x1344.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">lanceur de dés</h4>\n      <p>Lanceur de dés pour éviter qu'ils ne tombent n'impote où, repliable pour un rangement ou un transport facile</p>\n  <p>Tarif: <b>15 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-b3rzj7b3rzj7b3rz-2-896x1190.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Livre d'or</h4>\n      <p>Une façon originale de garder un souvenir d'un évènement, chaque invité peut écrire sur une feuille en bois et l'insérer dans le cadre.</p>\n     <p>Tarif: <b>70 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1759698331561.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Support bord de lit</h4>\n      <p>Support de smartphone avec passage pour le chargeur, repose lunettes et vide poches .</p>\n   <p>Tarif: <b>20 euros</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/image1.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">coffre a jouer sur roue</h4>\n      <p>Votre enfant va adorer, il peut transporter avec lui ses jouets, monter dedans et parfait pour le faire ranger, il vous suit partout</p>\n  <p>Tarif: <b>80 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1761049014457.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Cadre pour bracelet de naissance</h4>\n      <p>si vous voulez faire un cadeau original et personnalisé ou que vous avez gardé le bracelet de naissance dans une boîte, mettez le en valeur avec ce cadre.</p>\n     <p>Tarif: <b>10 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-9la2p19la2p19la2-2-896x1190.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Bouquet de fleurs et vase en bois</h4>\n      <p>Les enfants décorent les fleurs à leurs convenance, pour faire un cadeaux unique</p>\n   <p>Tarif: à partir de <b>20 euros</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-gc3v3lgc3v3lgc3v.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Décoration de parebrise&nbsp;</h4>\n      <p>Embellissez l'intérieur de votre véhicule avec ce pendentif en forme d'arbre de vie</p>\n  <p>Tarif: <b>10 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/1768517836732.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Cadre photo avec prénom</h4>\n      <p>Idéal pour affiché vos souvenirs partagés</p>\n     <p>Tarif: <b>40 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/cinma-leve-de-fonds-affiche-3.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Création à la demande</h4>\n      <p>Vous ne trouvez pas ce que vous cherchez dans le catalogue ?\n<br>Faites moi part de vos envies les plus originales. Je donne vie à vos idées, de la conception à la réalisation finale, pour une pièce unique qui vous ressemble.</p>\n   <p>Tarif: <b>à la demande</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-hq28b5hq28b5hq28.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Ambigramme</h4>\n      <p>Chaque angle un mot ou prénom différent</p>\n  <p>Tarif: <b>40 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-m115lom115lom115.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Décrocher la Lune</h4>\n      <p>Lampe lune avec son support en forme de main</p>\n     <p>Tarif: <b>50 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column people show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-2oi0022oi0022oi0.webp\" alt=\"People\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Création à la demande</h4>\n      <p>Besoin de réparer un appareil, car une pieces a casser je conçois, reproduit et imprime la piece.</p>\n   <p>Tarif: <b>à la demande</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n\n    <div class=\"column bois show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-e47c12e47c12e47c.webp\" alt=\"bois\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Médaille</h4>\n      <p>gravure personnalisée, dimension et forme au choix.</p>\n  <p>Tarif: à partir de<b> 3 euros</b></p>\n    <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n  </div></div>\n  <div class=\"column bois show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-pdc9fapdc9fapdc9.webp\" alt=\"bois\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Trophée</h4>\n      <p>Sur une base à deux plaquette pour graver vos messages, le haut du modèle est entièrement personnalisable.</p>\n     <p>Tarif: à partir de <b>15 euros</b></p>\n       <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n</div>\n  <div class=\"column bois show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/mapa-mental-brainstorming-lluvia-de-ideas-doodle-colorido-rosa-1.webp\" alt=\"bois\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Nouveau</h4>\n      <p>Même si de nouveaux modèles sont à venir, je peux à la demande concevoir des modèles unique.</p>\n   <p>Tarif: <b>sur demande</b></p>\n            <div class=\"mbr-section-btn align-center\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n\n<!-- END GRID -->\n</div>\n\n      [JS_CODE_0]   \n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "VOhLCbstl9",
           "_anchor": "design-block-VOhLCbstl9",
           "_sourceTheme": "startm5",
           "_PHPplaceholders": [],
           "_JSplaceholders": [
-            "<script>\n                filterSelection(\"all\") // Execute the function and show all columns\nfunction filterSelection(c) {\n  var x, i;\n  x = document.getElementsByClassName(\"column\");\n  if (c == \"all\") c = \"\";\n  // Add the \"show\" class (display:block) to the filtered elements, and remove the \"show\" class from the elements that are not selected\n  for (i = 0; i < x.length; i++) {\n    w3RemoveClass(x[i], \"show\");\n    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], \"show\");\n  }\n}\n\n// Show filtered elements\nfunction w3AddClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    if (arr1.indexOf(arr2[i]) == -1) {\n      element.className += \" \" + arr2[i];\n    }\n  }\n}\n\n// Hide elements that are not selected\nfunction w3RemoveClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    while (arr1.indexOf(arr2[i]) > -1) {\n      arr1.splice(arr1.indexOf(arr2[i]), 1);\n    }\n  }\n  element.className = arr1.join(\" \");\n}\n\n// Add active class to the current button (highlight it)\nvar btnContainer = document.getElementById(\"myBtnContainer\");\nvar btns = btnContainer.getElementsByClassName(\"btn\");\nfor (var i = 0; i < btns.length; i++) {\n  btns[i].addEventListener(\"click\", function(){\n    var current = document.getElementsByClassName(\"active\");\n    current[0].className = current[0].className.replace(\" active\", \"\");\n    this.className += \" active\";\n  });\n\n  // Sélectionne toutes les images dans les colonnes de la boutique\nconst images = document.querySelectorAll('.content img');\n\nimages.forEach(img => {\n    img.addEventListener('click', function() {\n        // Si l'image est déjà zoomée, on l'enlève\n        if (this.classList.contains('img-zoom-active')) {\n            this.classList.remove('img-zoom-active');\n        } else {\n            // On enlève le zoom sur toutes les autres images avant d'agrandir celle-ci\n            images.forEach(otherImg => otherImg.classList.remove('img-zoom-active'));\n            this.classList.add('img-zoom-active');\n        }\n    });\n});\n\n// Referme le zoom si on clique n'importe où ailleurs (optionnel)\ndocument.addEventListener('scroll', () => {\n    images.forEach(img => img.classList.remove('img-zoom-active'));\n});\n}</script>"
+            "<script>\nfunction filterSelection(c) {\n  var x, i;\n  x = document.getElementsByClassName(\"column\");\n  if (c == \"all\") c = \"\";\n  for (i = 0; i < x.length; i++) {\n    w3RemoveClass(x[i], \"show\");\n    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], \"show\");\n  }\n}\n\nfunction w3AddClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    if (arr1.indexOf(arr2[i]) == -1) {\n      element.className += \" \" + arr2[i];\n    }\n  }\n}\n\nfunction w3RemoveClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    while (arr1.indexOf(arr2[i]) > -1) {\n      arr1.splice(arr1.indexOf(arr2[i]), 1);\n    }\n  }\n  element.className = arr1.join(\" \");\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var btnContainer = document.getElementById(\"myBtnContainer\");\n  if (btnContainer) {\n    var btns = btnContainer.getElementsByClassName(\"btn\");\n    for (var i = 0; i < btns.length; i++) {\n      btns[i].addEventListener(\"click\", function(){\n        var current = document.getElementsByClassName(\"active\");\n        if (current.length > 0) {\n          current[0].className = current[0].className.replace(\" active\", \"\");\n        }\n        this.className += \" active\";\n      });\n    }\n  }\n\n  const images = document.querySelectorAll('.content img');\n  images.forEach(img => {\n      img.addEventListener('click', function() {\n          if (this.classList.contains('img-zoom-active')) {\n              this.classList.remove('img-zoom-active');\n          } else {\n              images.forEach(otherImg => otherImg.classList.remove('img-zoom-active'));\n              this.classList.add('img-zoom-active');\n          }\n      });\n  });\n\n  document.addEventListener('scroll', () => {\n      images.forEach(img => img.classList.remove('img-zoom-active'));\n  });\n});\n      </script>"
           ],
           "_protectedParams": [],
           "_global": false,
@@ -3762,6 +3762,1134 @@
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#2e481a\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#2e481a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright Ju la Bricole - Tout droits réservé.&nbsp; &nbsp;<a href=\"page2.html\" class=\"text-primary\">-Mentions légales-</a></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "uYrR34DsdE",
           "_anchor": "footer04-2e",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    },
+    "page3.html": {
+      "settings": {
+        "title": "Décoration de noël",
+        "meta_descr": "Découvrez toutes les créations de Ju La Bricole : objets décoratifs en bois, gravures laser sur mesure et articles en impression 3D. Commandez vos cadeaux personnalisés uniques, fabriqués avec passion dans mon atelier.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": "3"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "z-index": "1000",
+            "width": "100%",
+            "position": "relative",
+            ".dropdown-item:before": {
+              "font-family": "Moririse2 !important",
+              "content": "\"\\e966\"",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "transform": "scale(0, 1)",
+              "transition": "all 0.25s ease-in-out"
+            },
+            "@media (max-width: 767px)": {
+              ".navbar-toggler": {
+                "transform": "scale(0.8)"
+              }
+            },
+            ".navbar-brand": {
+              "img": {
+                "max-width": "100%",
+                "max-height": "100%",
+                "border-radius": "0px !important"
+              },
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "10px 0",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".navbar-nav": {
+              "margin": "auto",
+              "margin-left": "0",
+              "& when (@contentAlign = '2')": {
+                "margin-left": "auto"
+              },
+              "& when (@contentAlign = '3')": {
+                "margin-left": "auto",
+                "margin-right": "0"
+              },
+              ".nav-item": {
+                "padding": "0 !important",
+                "transition": ".3s all !important",
+                ".nav-link": {
+                  "padding": "16px !important",
+                  "margin": "0 !important",
+                  "border-radius": "1rem !important",
+                  "transition": ".3s all !important",
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  },
+                  "& when not (@isRoundedButtons)": {
+                    "border-radius": "4px !important"
+                  }
+                }
+              },
+              ".open": {
+                ".nav-link": {
+                  "&::after": {
+                    "transform": "rotate(180deg)"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&::before": {
+                      "content": "\"\"",
+                      "width": "100%",
+                      "height": "20px",
+                      "top": "100%",
+                      "background": "transparent",
+                      "position": "absolute"
+                    }
+                  }
+                }
+              },
+              ".dropdown-item": {
+                "padding": "12px !important",
+                "border-radius": "0.5rem !important",
+                "margin": "0 8px !important",
+                "transition": ".3s all !important",
+                "&:hover": {
+                  "background-color": "rgba(27, 31, 10, 0.06)"
+                },
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              "& when not (@showLogo), (@showBrand)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1.5rem"
+                }
+              },
+              "& when not (@showBrand)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1.5rem"
+                }
+              }
+            },
+            ".nav-link": {
+              "width": "fit-content",
+              "position": "relative"
+            },
+            ".navbar-logo": {
+              "padding-left": "2rem",
+              "margin": "0 !important",
+              "@media (max-width: 767px)": {
+                "padding-left": "1rem"
+              }
+            },
+            ".navbar-caption": {
+              "padding-left": "1rem",
+              "padding-right": ".5rem",
+              "& when not (@showLogo)": {
+                "@media (min-width: 767px)": {
+                  "padding-left": "2rem"
+                }
+              }
+            },
+            ".nav-dropdown": {
+              "@media (max-width: 767px)": {
+                "padding-bottom": "0.5rem"
+              }
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem",
+              "transition": ".3s all"
+            },
+            ".container": {
+              "display": "flex",
+              "height": "90px",
+              "padding": "0.5rem 0.6rem",
+              "flex-wrap": "nowrap",
+              "& when not (@collapsed)": {
+                "@media (min-width: 992px)": {},
+                "& when (@transparent)": {
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                }
+              },
+              "left": "0",
+              "right": "0",
+              "-webkit-box-pack": "justify",
+              "-ms-flex-pack": "justify",
+              "justify-content": "flex-end",
+              "-webkit-box-align": "center",
+              "-webkit-align-items": "center",
+              "-ms-flex-align": "center",
+              "align-items": "center",
+              "border-radius": "100vw",
+              "margin-top": "1rem",
+              "background-color": "@menuBgColor",
+              "box-shadow": "0 30px 60px 0 rgba(27, 31, 10, 0.08)",
+              "@media (max-width: 992px)": {
+                "padding-right": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                "width": "95%",
+                "height": "56px !important",
+                "padding-right": "1rem",
+                "margin-top": "0rem"
+              },
+              "& when not (@isRoundedButtons)": {
+                "border-radius": "4px !important"
+              }
+            },
+            ".iconfont-wrapper": {
+              "color": "@iconsColor !important",
+              "font-size": "1.5rem",
+              "padding-right": "0.5rem"
+            },
+            ".dropdown-menu": {
+              "flex-wrap": "wrap",
+              "flex-direction": "column",
+              "max-width": "100%",
+              "padding": "12px 4px !important",
+              "border-radius": "1.5rem",
+              "transition": ".3s all !important",
+              "min-width": "auto",
+              "background": "@menuBgColor",
+              "& when (@transparent)": {
+                "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+              },
+              "& when not (@isRoundedButtons)": {
+                "border-radius": "4px !important"
+              }
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-right": "0.5rem",
+                "vertical-align": "sub",
+                "&:before": {
+                  "display": "inline-block",
+                  "transform": "scale(1, 1)",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "90px",
+              "transition": "all 0.3s",
+              "border-bottom": "1px solid transparent",
+              "background": "transparent !important",
+              "&:not(.navbar-short)": {},
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0.5rem 1.8rem"
+              },
+              ".navbar-logo img": {
+                "width": "auto"
+              },
+              ".navbar-collapse": {
+                "z-index": "1",
+                "justify-content": "flex-end"
+              },
+              "&.collapsed": {
+                "justify-content": "center",
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~\"calc(98.5vh - @{logoSize}rem)\""
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "41%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-right": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                ".navbar-logo": {
+                  "img": {
+                    "height": "2rem !important"
+                  }
+                },
+                "min-height": "72px"
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "40%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {}
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "10px"
+                },
+                ".navbar-toggler": {
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "&.navbar-short": {
+                ".navbar-logo": {
+                  "img": {
+                    "height": "2rem"
+                  }
+                }
+              },
+              "padding": "0 !important",
+              "border": "none !important",
+              "box-shadow": "none !important",
+              "border-radius": "0 !important"
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "105%",
+                  "transform": "none",
+                  "top": "-12px"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "flex"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center",
+              "min-width": "140px",
+              "@media (max-width: 992px)": {
+                "text-align": "left"
+              }
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": "0 1rem"
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".icons-menu": {
+              "flex-wrap": "nowrap",
+              "display": "flex",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center",
+              "@media (max-width: 992px)": {
+                "justify-content": "flex-start",
+                "margin-bottom": ".5rem"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "70px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~\"+\" 2rem)",
+                "left": "-1rem"
+              }
+            },
+            ".navbar .dropdown > .dropdown-menu": {
+              "display": "none",
+              "width": "max-content",
+              "max-width": "500px !important",
+              "transform": "translateX(-50%)",
+              "top": "calc(~'100% + 20px')",
+              "left": "50%",
+              ".dropdown-item": {
+                "line-height": "1 !important"
+              },
+              ".dropdown": {
+                ".dropdown-item": {
+                  "align-items": "center",
+                  "display": "flex",
+                  "height": "max-content !important",
+                  "min-height": "max-content !important",
+                  "&::after": {
+                    "display": "inline-block",
+                    "position": "static",
+                    "margin-left": "0.5rem",
+                    "margin-top": "0",
+                    "margin-right": "0",
+                    "margin-bottom": "0",
+                    "transition": ".3s all",
+                    "transform": "rotate(-90deg)"
+                  }
+                }
+              },
+              ".dropdown.open": {
+                ".dropdown-item": {
+                  "&::after": {
+                    "transform": "rotate(0deg)"
+                  }
+                }
+              }
+            },
+            ".mbr-section-btn": {
+              "margin": "-0.6rem -0.6rem"
+            },
+            ".navbar-toggler": {
+              "margin-left": "12px",
+              "margin-right": "8px",
+              "order": "1000"
+            },
+            "& when (@collapsed)": {
+              ".navbar-brand": {
+                "margin-right": "auto"
+              },
+              ".navbar-collapse": {
+                "z-index": "-1 !important",
+                "position": "absolute",
+                "top": "110%",
+                "left": "0",
+                "width": "100%",
+                "padding": "1rem",
+                "border-radius": "1.5rem",
+                "background": "@menuBgColor",
+                "& when (@transparent)": {
+                  "border-color": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important",
+                  "opacity": "1",
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                },
+                "backdrop-filter": "blur(8px)",
+                "@media (max-width: 575px)": {
+                  "padding": "1rem"
+                },
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              ".navbar-nav": {
+                ".nav-item": {
+                  ".nav-link": {
+                    "&::after": {
+                      "margin-left": "10px"
+                    }
+                  }
+                },
+                ".dropdown-item": {
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  }
+                }
+              },
+              ".navbar .dropdown > .dropdown-menu": {
+                "display": "none",
+                "max-width": "100% !important",
+                "transform": "translateX(0)",
+                "top": "10px",
+                "left": "0",
+                "padding": "8px !important",
+                "border-radius": "0.5rem",
+                "background-color": "rgba(27, 31, 10, 0.04) !important",
+                ".dropdown-item": {
+                  "padding": "8px !important",
+                  "line-height": "1 !important",
+                  "margin-bottom": "4px !important"
+                },
+                ".dropdown": {
+                  ".dropdown-item": {
+                    "align-items": "center",
+                    "display": "flex",
+                    "height": "max-content !important",
+                    "min-height": "max-content !important",
+                    "&::after": {
+                      "display": "inline-block",
+                      "position": "static",
+                      "margin-left": "0.5rem",
+                      "margin-top": "0",
+                      "margin-right": "0",
+                      "margin-bottom": "0",
+                      "transition": ".3s all",
+                      "transform": "rotate(0deg)"
+                    }
+                  }
+                },
+                ".dropdown.open": {
+                  ".dropdown-item": {
+                    "&::after": {
+                      "transform": "rotate(180deg)"
+                    }
+                  }
+                },
+                ".dropdown-submenu": {
+                  "position": "static",
+                  "width": "100%",
+                  "max-width": "100% !important",
+                  "transform": "translateX(0) !important",
+                  "top": "0",
+                  "left": "0",
+                  "padding": "8px !important",
+                  "border-radius": "0.5rem",
+                  "background-color": "rgba(27, 31, 10, 0.04) !important"
+                }
+              },
+              ".navbar .dropdown.open > .dropdown-menu": {
+                "display": "flex",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              },
+              ".navbar .dropdown > .dropdown-submenu.show": {
+                "display": "flex",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".navbar-brand": {
+                "margin-right": "auto"
+              },
+              ".navbar-collapse": {
+                "z-index": "-1 !important",
+                "position": "absolute",
+                "top": "110%",
+                "left": "0",
+                "width": "100%",
+                "padding": "1rem",
+                "border-radius": "1.5rem",
+                "background": "@menuBgColor",
+                "& when (@transparent)": {
+                  "opacity": "1",
+                  "border-color": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important",
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                },
+                "backdrop-filter": "blur(8px)",
+                "& when not (@isRoundedButtons)": {
+                  "border-radius": "4px !important"
+                }
+              },
+              ".navbar-nav": {
+                ".nav-item": {
+                  ".nav-link": {
+                    "&::after": {
+                      "margin-left": "10px"
+                    }
+                  }
+                },
+                ".dropdown-item": {
+                  "&:hover": {
+                    "background-color": "rgba(27, 31, 10, 0.06)"
+                  }
+                }
+              },
+              ".navbar .dropdown > .dropdown-menu": {
+                "max-width": "100% !important",
+                "transform": "translateX(0)",
+                "top": "10px",
+                "left": "0",
+                "padding": "8px !important",
+                "border-radius": "1rem",
+                "background-color": "rgba(27, 31, 10, 0.04) !important",
+                ".dropdown-item": {
+                  "padding": "8px !important",
+                  "line-height": "1 !important",
+                  "margin-bottom": "4px !important"
+                },
+                ".dropdown": {
+                  ".dropdown-item": {
+                    "align-items": "center",
+                    "display": "flex",
+                    "height": "max-content !important",
+                    "min-height": "max-content !important",
+                    "&::after": {
+                      "display": "inline-block",
+                      "position": "static",
+                      "margin-left": "0.5rem",
+                      "margin-top": "0",
+                      "margin-right": "0",
+                      "margin-bottom": "0",
+                      "transition": ".3s all",
+                      "transform": "rotate(0deg)"
+                    }
+                  }
+                },
+                ".dropdown.open": {
+                  ".dropdown-item": {
+                    "&::after": {
+                      "transform": "rotate(180deg)"
+                    }
+                  }
+                },
+                ".dropdown-submenu": {
+                  "position": "static",
+                  "width": "100%",
+                  "max-width": "100% !important",
+                  "transform": "translateX(0) !important",
+                  "top": "0",
+                  "left": "0",
+                  "padding": "8px !important",
+                  "border-radius": "1rem",
+                  "background-color": "rgba(27, 31, 10, 0.04) !important"
+                }
+              },
+              ".navbar .dropdown.open > .dropdown-menu": {
+                "display": "flex !important",
+                "flex-direction": "column",
+                "align-items": "flex-start"
+              }
+            },
+            ".navbar-collapse": {
+              "@media (max-width: 575px)": {
+                "padding": "1rem"
+              }
+            }
+          },
+          "_name": "menu02",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"menu menu2\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\t<mbr-parameters>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"1\" max=\"5\" step=\"0.1\" value=\"3\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<select title=\"Menu Items Align\" name=\"contentAlign\" condition=\"showItems\">\n\t\t\t<option value=\"1\">Left</option>\n\t\t\t<option value=\"2\" selected>Center</option>\n\t\t\t<option value=\"3\">Right</option>\n\t\t</select>\n\t\t<input type=\"checkbox\" title=\"Icons\" name=\"showIcons\">\n\t\t<select title=\"Amount\" name=\"iconsAmount\" condition=\"showIcons\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#000000\" condition=\"showIcons\">\n\t\t<input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n\t\t<header>Styles</header>\n\t\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\" condition=\"none\">\n\t\t<input type=\"checkbox\" title=\"Transparent\" name=\"transparent\" checked>\n\t\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n\t\t<input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"transparent\">\n\t\t<input type=\"color\" title=\"Color\" name=\"menuBgColor\" value=\"#9fe870\">\n\t\t<input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#000000\">\n\t</mbr-parameters>\n\n\t<nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"navbar-brand\">\n\t\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<a href=\"https://julabricole.free.fr\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/logo-ju.svg\" alt=\"Mobirise Website Builder\" mbr-style=\"{'height': logoSize + 'rem'}\">\n\t\t\t\t\t</a>\n\t\t\t\t</span>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-iconFont\"><a class=\"navbar-caption text-black text-primary\" data-app-selector=\".navbar-caption\" href=\"index.html#header05-1\" data-app-placeholder=\"Type Text\">Ju la Bricole</a></span>\n\t\t\t</div>\n\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showIcons || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" mbr-if=\"showItems || showIcons || showButtons\">\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">boutique</a>\n\t\t\t\t\t</li><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black\" href=\"index.html#design-block-60rw6RD1Hm\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Qui suis-je ?</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black\" href=\"index.html#form02-6\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contacts</a>\n\t\t\t\t\t</li></ul>\n\t\t\t\t<div class=\"icons-menu\" mbr-if=\"showIcons\">\n\t\t\t\t\t<a class=\"iconfont-wrapper\" href=\"https://mobiri.se\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mobi-mbri-phone mobi-mbri\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" mbr-if=\"iconsAmount > 1\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mobi-mbri-letter mobi-mbri\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" mbr-if=\"iconsAmount > 2\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mobi-mbri-map-pin mobi-mbri\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" mbr-if=\"iconsAmount > 3\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mobi-mbri-shopping-cart mobi-mbri\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-primary\" href=\"index.html#form02-6\" data-app-placeholder=\"Type Text\"> Start now</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n</section>",
+          "_cid": "vBlCrvNkKg",
+          "_anchor": "menu02-2h",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".item-wrapper": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              "margin-top": "2rem"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = \"video\")": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-iconfont": {
+              "display": "inline-flex",
+              "font-size": "2rem",
+              "color": "@iconColor",
+              "width": "80px",
+              "justify-content": "center",
+              "align-items": "center",
+              "background": "@iconbg",
+              "height": "80px",
+              "border-radius": "50%"
+            },
+            ".card-title, .iconfont-wrapper, .card-text": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            },
+            ".mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".card-title, .iconfont-wrapper": {
+              "color": "#9fe870"
+            },
+            ".card-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            },
+            "@media (max-width: 767px)": {
+              ".row": {
+                "display": "flex !important",
+                "flex-direction": "row !important",
+                "flex-wrap": "nowrap !important",
+                "overflow-x": "auto"
+              },
+              ".col-md-4, .col-sm-12, [class*=\"col-\"]": {
+                "flex": "0 0 auto !important",
+                "width": "33.33% !important",
+                "max-width": "33.33% !important"
+              },
+              ".mbr-iconfont": {
+                "width": "40px !important",
+                "height": "40px !important",
+                "font-size": "1rem !important"
+              },
+              ".card-title": {
+                "font-size": "0.8rem !important"
+              },
+              ".card-text": {
+                "font-size": "0.7rem !important"
+              },
+              "padding-top": "(@paddingTop * 0.5rem) !important",
+              "padding-bottom": "(@paddingBottom * 0.5rem) !important"
+            }
+          },
+          "_name": "features010",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features10\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\">\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\">\n    <header>Card</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n\t<input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\">\n    <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#9fe870\" selected condition=\"showIcon\">\n    <input type=\"color\" title=\"Icon BG\" name=\"iconbg\" value=\"#664306\" selected condition=\"showIcon\">\n    <select title=\"Columns\" name=\"columns\">\n      <option value=\"12\">1</option>\n      <option value=\"6\">2</option>\n      <option value=\"4\" selected>3</option>\n      <option value=\"3\">4</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center mb-5\" mbr-if=\"showMainTitle || showMainSubtitle\">\n      <div class=\"col-12 mb-0 content-head\">\n        <h3 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\">\n          <b>Features with icons</b>\n        </h3>\n        <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n          List main features of your project in this block\n        </h5>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"card-box align-left\">\n            <div class=\"iconfont-wrapper mb-3\" mbr-if=\"showIcon\">\n              <span mbr-icon class=\"mbr-iconfont mobi-mbri-extension mobi-mbri\"></span>\n            </div>\n            <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n              <b>Creation</b>\n            </h5>\n            <p class=\"card-text mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text, .mbr-section-btn\">Sur mesure.\n            </p>\n            <div class=\"mbr-section-btn mt-2 item-footer mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n              <a href class=\"btn btn-primary item-btn\" data-app-placeholder=\"Type Text\">Learn More</a>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"card-box align-left\">\n            <div class=\"iconfont-wrapper mb-3\" mbr-if=\"showIcon\">\n              <span mbr-icon class=\"mbr-iconfont mobi-mbri-smile-face mobi-mbri\"></span>\n            </div>\n            <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>à l'écoute</b></h5>\n            <p class=\"card-text mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text, .mbr-section-btn\">\n              je prend en considération tout vos voeux</p>\n            <div class=\"mbr-section-btn mt-2 item-footer mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n              <a href class=\"btn btn-primary item-btn\" data-app-placeholder=\"Type Text\">Learn More</a>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}}\">\n        <div class=\"item-wrapper\">\n          <div class=\"card-box align-left\">\n            <div class=\"iconfont-wrapper mb-3\" mbr-if=\"showIcon\">\n              <span mbr-icon class=\"mbr-iconfont mobi-mbri-idea mobi-mbri\"></span>\n            </div>\n            <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n              <b>conseil</b></h5>\n            <p class=\"card-text mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text, .mbr-section-btn\">besoin d'un cadeaux sans avoir d'idée, travaillons ensemble</p>\n            <div class=\"mbr-section-btn mt-2 item-footer mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n              <a href class=\"btn btn-primary item-btn\" data-app-placeholder=\"Type Text\">Learn More</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "vBlCrwZH2X",
+          "_anchor": "features010-2i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "& when not (@transp)": {
+                "background": "linear-gradient(@angle * 1deg, @bg-value, @color2)"
+              },
+              "& when (@transp)": {
+                "background": "transparent"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "50%",
+              "height": "50%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "-": {
+              "box-sizing": "border-box"
+            },
+            ".row": {
+              "display": "flex !important",
+              "flex-wrap": "wrap !important",
+              "margin": "8px -16px",
+              "justify-content": "center"
+            },
+            ".row:after": {
+              "content": "\"\"",
+              "display": "table",
+              "clear": "both"
+            },
+            ".row, .row > .column": {
+              "padding": "8px"
+            },
+            ".column": {
+              "display": "none",
+              "flex": "0 0 33.33% !important",
+              "max-width": "33.33% !important",
+              "padding": "8px !important",
+              "float": "none !important"
+            },
+            ".show": {
+              "display": "block",
+              "flex-direction": "column !important"
+            },
+            ".content": {
+              "background-color": "@ContentColor",
+              "padding": "10px",
+              "flex": "1 1 auto !important",
+              "display": "flex !important",
+              "flex-direction": "column !important",
+              "height": "100%"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "auto !important"
+            },
+            ".btn": {
+              "border": "none",
+              "outline": "none",
+              "padding": "12px 16px",
+              "background-color": "@ButtonColor",
+              "cursor": "pointer"
+            },
+            ".btn:hover": {
+              "background-color": "@ButtonColorOver"
+            },
+            ".btn.active": {
+              "background-color": "@ButtonColorActive",
+              "color": "white"
+            },
+            ".mbr-section-title": {
+              "color": "#9fe870"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            "img": {
+              "width": "100%"
+            },
+            ".mobile-popup-overlay": {
+              "display": "none",
+              "position": "fixed",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "rgba(0, 0, 0, 0.8)",
+              "z-index": "99999",
+              "justify-content": "center",
+              "align-items": "center",
+              "padding": "15px"
+            },
+            ".mobile-popup-content": {
+              "background": "@ContentColor",
+              "padding": "20px",
+              "border-radius": "8px",
+              "max-width": "90vw",
+              "max-height": "85vh",
+              "overflow-y": "auto",
+              "box-shadow": "0 5px 25px rgba(0, 0, 0, 0.5)",
+              "color": "#fff"
+            },
+            "@media (max-width: 991px)": {
+              ".column": {
+                "float": "left !important",
+                "width": "33.33% !important"
+              }
+            },
+            "@media (max-width: 667px)": {
+              ".column": {
+                "flex": "0 0 33.33% !important",
+                "max-width": "33.33% !important",
+                "padding": "2px !important",
+                "display": "flex !important",
+                "flex-direction": "column !important"
+              },
+              ".content": {
+                "background-color": "@ContentColor",
+                "padding": "4px !important",
+                "flex": "1 1 auto !important",
+                "display": "flex !important",
+                "flex-direction": "column !important",
+                "height": "100%",
+                "border-radius": "4px !important",
+                "overflow": "hidden !important"
+              },
+              ".content .mobile-popup-desc, .content .mobile-popup-price, .content .mobile-popup-btn": {
+                "display": "none !important"
+              },
+              ".mbr-section-subtitle.mobile-popup-title": {
+                "font-size": "0.65rem !important",
+                "line-height": "1.1 !important",
+                "margin-top": "4px !important",
+                "padding-bottom": "2px !important",
+                "margin-bottom": "4px !important"
+              },
+              ".content img": {
+                "border-radius": "4px !important",
+                "width": "100%",
+                "margin-bottom": "2px !important",
+                "cursor": "pointer"
+              },
+              ".mobile-popup-content .mobile-popup-desc": {
+                "display": "block !important",
+                "font-size": "0.8rem !important",
+                "line-height": "1.3 !important",
+                "margin-bottom": "8px !important"
+              },
+              ".mobile-popup-content .mobile-popup-price": {
+                "display": "block !important",
+                "font-size": "0.85rem !important",
+                "margin-bottom": "8px !important"
+              },
+              ".mobile-popup-content .mobile-popup-btn": {
+                "display": "block !important",
+                "margin-top": "10px !important"
+              },
+              ".mobile-popup-content .mobile-popup-title": {
+                "font-size": "0.95rem !important",
+                "margin-bottom": "8px !important"
+              },
+              ".mobile-popup-content .btn": {
+                "padding": "6px 12px !important",
+                "font-size": "0.75rem !important",
+                "display": "inline-block !important",
+                "width": "auto !important"
+              }
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content4\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"9\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/lionaf.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#664306\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n      </fieldset>\n\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#232323\" condition=\"bg.type == 'color'\">\n         <input type=\"range\" name=\"angle\" title=\"Angle\" min=\"0\" max=\"270\" value=\"0\" step=\"1\" condition=\"bg.type == 'color'\">\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"bg.type == 'color'\">\n\t\t\n\t\t\n\t\t        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n\n            <header>Gallery</header>\n                  <input type=\"color\" title=\"Color\" name=\"ContentColor\" value=\"#757b62\">\n                 <input type=\"color\" title=\"Button Color\" name=\"ButtonColor\" value=\"#ffffff\">  \n          <input type=\"color\" title=\"Button Color Over\" name=\"ButtonColorOver\" value=\"#ffffff\"> \n                    <input type=\"color\" title=\"Button Color Active\" name=\"ButtonColorActive\" value=\"#666666\"> \n                            <input type=\"checkbox\" title=\"Button\" name=\"ButtonShop\" checked>  \n                                  \n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Décorations de Noël</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Apportez une touche d’authenticité et de chaleur à votre sapin avec ces délicate lanterne de Noël et suspensions en bois. Finement découpée et gravée au laser, elle laisse entrevoir les lumières de votre sapin à travers ses motifs hivernaux ajourés.</h4>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_cart&amount=5.00&item_name=Candle%201&currency_code=USD\" data-app-placeholder=\"Type Text\">LEARN MORE</a>\n                    <a class=\"btn btn-primary-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n    \n\n<!-- Portfolio Gallery Grid -->\n<div class=\"row\">\n  <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-54hcsd54hcsd54hc.webp\" alt=\"Mountains\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4 mobile-popup-title\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Kit Créatif du moment</h4>\n      <p class=\"mobile-popup-desc\">Conçue et assemblée avec soin, cette suspension hexagonale en forme de lanterne traditionnelle revisite la boule de Noël classique avec élégance. Chaque face dévoile des motifs festifs délicatement ajourés (sapin étoilé, flocon de neige, cloche de Noël) ainsi que de fines gravures sur sa cheminée supérieure.<br><br>Dimensions\tHauteur : 6,5 cm / Circonférence (envergure) : env. 5 cm<br></p>\n       <p class=\"mobile-popup-price\">Tarif:<b>&nbsp;6 euros</b></p>\n        <div class=\"mbr-section-btn align-center mobile-popup-btn\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n         </div>\n  </div>\n  <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-1xglz91xglz91xgl.webp\" alt=\"Lights\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4 mobile-popup-title\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Décorations de noël</h4>\n      <p class=\"mobile-popup-desc\">Réalisée avec soin, cette boule de Noël revisitée adopte l'allure d'une petite lanterne ronde traditionnelle à deux niveaux. Ses panneaux latéraux dévoilent des motifs festifs découpés au laser — sapin de Noël et silhouette hivernale — tandis que sa tourelle supérieure est ponctuée de petits flocons ajourés. <br>Elle joue naturellement avec la lumière ambiante et les guirlandes environnantes pour créer de jolis jeux d'ombres et de reliefs.<br><br>Dimensions\tHauteur : 6,5 cm / Circonférence (envergure) : env. 4,5 cm<br></p>\n        <p class=\"mobile-popup-price\">Tarif:<b>&nbsp;6 euros</b></p>\n         <div class=\"mbr-section-btn align-center mobile-popup-btn\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n\n\n    </div>\n  </div>\n  <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-pb3kqupb3kqupb3k.webp\" alt=\"Nature\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4 mobile-popup-title\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Création à la demande</h4>\n      <p class=\"mobile-popup-desc\">Cette suspension se distingue par sa silhouette bombée originale surmontée d'un élégant toit à facettes. Chaque panneau latéral est finement ajouré au laser pour révéler des motifs de Noël, créant de superbes jeux de lumière avec les guirlandes.<br>C'est la pièce maîtresse idéale pour apporter une touche poétique à votre décoration de fin d'année.<br><br>Dimensions\tHauteur : 7 cm / Circonférence (envergure) : env. 5,5 cm<br></p>\n        <p class=\"mobile-popup-price\">Tarif:<b>&nbsp;7 euros</b></p>\n              <div class=\"mbr-section-btn align-center mobile-popup-btn\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n\n\n    <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-ooaxqqooaxqqooax.webp\" alt=\"Mountains\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4 mobile-popup-title\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Ornement de Noël m1</h4>\n      <p class=\"mobile-popup-desc\">Plongez au cœur de la féerie des fêtes avec cette somptueuse boule de Noël ajourée en relief. Ses superpositions de motifs sculptés et ses volutes délicates captent la lumière de votre sapin pour créer un décor enchanteur et chaleureux.<br><br>Dimensions\tDiamètre : 8,5 cm / Épaisseur : 1,5 cm<br></p>\n       <p class=\"mobile-popup-price\">Tarif:<b>&nbsp;5 euros</b></p>\n        <div class=\"mbr-section-btn align-center mobile-popup-btn\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n         </div>\n  </div>\n  <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-1bl75h1bl75h1bl7.webp\" alt=\"Lights\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4 mobile-popup-title\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Ornement de Noël m2 et m3</h4>\n      <p class=\"mobile-popup-desc\">Visuel à venir très prochainement</p>\n        <p class=\"mobile-popup-price\">Tarif:<b>&nbsp;5&nbsp;euros</b></p>\n         <div class=\"mbr-section-btn align-center mobile-popup-btn\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n\n\n    </div>\n  </div>\n  <div class=\"column nature show\">\n    <div class=\"content\">\n      <img src=\"@PROJECT_PATH@/assets/images/gemini-generated-image-y19wfcy19wfcy19w.webp\" alt=\"Nature\">\n       <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4 mobile-popup-title\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">Création à la demande</h4>\n      <p class=\"mobile-popup-desc\">Immortalisez les souvenirs précieux des fêtes de fin d'année avec cette magnifique boule de Noël personnalisée en bois.&nbsp; Personnalisable au prénom de votre choix, elle apportera une touche de tendresse et de magie à votre sapin. Possibilité de changer le motif<br><br>Dimensions\tDiamètre : 9 cm<br></p>\n        <p class=\"mobile-popup-price\">Tarif: <b>à partir de 7 euros</b></p>\n              <div class=\"mbr-section-btn align-center mobile-popup-btn\" mbr-if=\"ButtonShop\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#form02-1r\" data-app-placeholder=\"Type Text\">en savoir plus</a></div>\n    </div>\n  </div>\n  \n\n<!-- END GRID -->\n</div>\n\n<!-- Fond sombre pour l'encart mobile -->\n<div class=\"mobile-popup-overlay\" id=\"mobilePopupOverlay\">\n    <div class=\"mobile-popup-content\" id=\"mobilePopupContent\">\n        <!-- Le contenu cliqué sera injecté ici dynamiquement -->\n    </div>\n</div>\n\n      [JS_CODE_0]   \n            </div>\n        </div>\n    </div>\n</section>",
+          "_sourceTheme": "startm5",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script>\nfunction filterSelection(c) {\n  var x, i;\n  x = document.getElementsByClassName(\"column\");\n  if (c == \"all\") c = \"\";\n  for (i = 0; i < x.length; i++) {\n    w3RemoveClass(x[i], \"show\");\n    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], \"show\");\n  }\n}\n\nfunction w3AddClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    if (arr1.indexOf(arr2[i]) == -1) {\n      element.className += \" \" + arr2[i];\n    }\n  }\n}\n\nfunction w3RemoveClass(element, name) {\n  var i, arr1, arr2;\n  arr1 = element.className.split(\" \");\n  arr2 = name.split(\" \");\n  for (i = 0; i < arr2.length; i++) {\n    while (arr1.indexOf(arr2[i]) > -1) {\n      arr1.splice(arr1.indexOf(arr2[i]), 1);\n    }\n  }\n  element.className = arr1.join(\" \");\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var btnContainer = document.getElementById(\"myBtnContainer\");\n  if (btnContainer) {\n    var btns = btnContainer.getElementsByClassName(\"btn\");\n    for (var i = 0; i < btns.length; i++) {\n      btns[i].addEventListener(\"click\", function(){\n        var current = document.getElementsByClassName(\"active\");\n        if (current.length > 0) {\n          current[0].className = current[0].className.replace(\" active\", \"\");\n        }\n        this.className += \" active\";\n      });\n    }\n  }\n\n  // Gestion du clic sur les images pour afficher l'encart sur smartphone\n  const images = document.querySelectorAll('.content img');\n  const overlay = document.getElementById('mobilePopupOverlay');\n  const popupContent = document.getElementById('mobilePopupContent');\n\n  images.forEach(img => {\n      img.addEventListener('click', function(e) {\n          // Actif uniquement sur smartphone (largeur <= 667px)\n          if (window.innerWidth <= 667) {\n              e.stopPropagation();\n              const cardContent = this.closest('.content');\n              \n              // Récupération des éléments du produit cliqué\n              const titleEl = cardContent.querySelector('.mobile-popup-title');\n              const descEl = cardContent.querySelector('.mobile-popup-desc');\n              const priceEl = cardContent.querySelector('.mobile-popup-price');\n              const btnEl = cardContent.querySelector('.mobile-popup-btn');\n\n              // Construction du HTML de l'encart\n              let htmlContent = `<img src=\"${this.src}\" style=\"width:100%; border-radius:4px; margin-bottom:10px;\">`;\n              if (titleEl) htmlContent += titleEl.outerHTML;\n              if (descEl) htmlContent += descEl.outerHTML;\n              if (priceEl) htmlContent += priceEl.outerHTML;\n              if (btnEl) htmlContent += btnEl.outerHTML;\n              htmlContent += `<div style=\"text-align:center; margin-top:12px;\"><button class=\"btn btn-secondary\" style=\"padding:6px 12px; font-size:0.75rem; background:#444; color:#fff; border-radius:4px; border:none;\" onclick=\"document.getElementById('mobilePopupOverlay').style.display='none'\">Fermer</button></div>`;\n\n              popupContent.innerHTML = htmlContent;\n              overlay.style.display = 'flex';\n          }\n      });\n  });\n\n  // Fermer l'encart si on clique en dehors\n  if (overlay) {\n      overlay.addEventListener('click', function(e) {\n          if (e.target === overlay) {\n              overlay.style.display = 'none';\n          }\n      });\n  }\n});\n      </script>"
+          ],
+          "_cid": "vBlCrxYHFe",
+          "_anchor": "design-block-2j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "form": {
+              ".mbr-section-btn": {
+                "text-align": "center",
+                "width": "100%",
+                ".btn": {
+                  "display": "inline-flex",
+                  "@media (max-width: 991px)": {
+                    "width": "100%"
+                  }
+                }
+              }
+            },
+            ".mbr-section-subtitle": {
+              "color": "#a6a99c"
+            }
+          },
+          "_name": "form02",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"form5\" group=\"Forms\" plugins=\"formstyler, datepicker\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#664306\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay && bg.type=='image')\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Contactez moi</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><div><br></div>Besoin d'informations ou une demande particulière.<br>Pour toute commande veuillez indiquer le modèle choisit.</h4>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div mbr-form class=\"col-lg-8 mx-auto mbr-form\">\n                <form action=\"julabricole@free.fr\" name=\"Form Name\" method=\"POST\" class=\"mbr-form form-with-styler\" data-verified=\"julabricole@free.fr\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">\n                            Merci, je vous répond au plus vite, Julien\n                        </div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                            Oops...! il manque des informations!\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"col-md col-sm-12 form-group mb-3\" data-for=\"name\">\n                            <input type=\"text\" name=\"name\" placeholder=\"Name\" data-form-field=\"name\" class=\"form-control\" value>\n                        </div>\n                        <div class=\"col-md col-sm-12 form-group mb-3\" data-for=\"email\">\n                            <input type=\"email\" name=\"email\" placeholder=\"Email\" data-form-field=\"email\" class=\"form-control\" value>\n                        </div>\n                        <div class=\"col-12 form-group mb-3\" data-for=\"phone\">\n                            <input type=\"tel\" name=\"phone\" placeholder=\"Phone\" data-form-field=\"phone\" class=\"form-control\" value>\n                        </div>\n                        <div class=\"col-12 form-group mb-3\" data-for=\"textarea\">\n                            <textarea name=\"textarea\" placeholder=\"Message\" data-form-field=\"textarea\" class=\"form-control\"></textarea>\n                        </div>\n                        <div mbr-buttons=\"true\" mbr-theme-style=\"display-7\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" class=\"col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn\"><a type=\"submit\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\">envoyer message</a></div>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "vBlCrAat1w",
+          "_anchor": "form02-2k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#2e481a\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#2e481a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright Ju la Bricole - Tout droits réservé.&nbsp; &nbsp;<a href=\"page2.html\" class=\"text-primary\">-Mentions légales-</a></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "vBlCrAJ1ef",
+          "_anchor": "footer04-2l",
           "_protectedParams": [],
           "_global": true,
           "_once": "footers",
